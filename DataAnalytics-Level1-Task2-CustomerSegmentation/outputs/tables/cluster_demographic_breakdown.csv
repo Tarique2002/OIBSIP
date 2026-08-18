@@ -1,0 +1,8 @@
+Product_Category,,Beauty,Beauty,Clothing,Clothing,Electronics,Electronics,All
+Gender,,Female,Male,Female,Male,Female,Male,
+Cluster,Segment_Name,,,,,,,
+0,High-Value Inactive Customers,25,18,23,28,21,25,140
+1,Low-Value Recent Customers,57,51,55,61,77,69,370
+2,Low-Value Inactive Customers,63,50,72,76,48,57,366
+3,High-Value Recent Customers,21,22,24,12,24,21,124
+All,,166,141,174,177,170,172,1000
