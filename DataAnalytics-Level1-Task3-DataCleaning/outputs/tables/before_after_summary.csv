@@ -1,0 +1,9 @@
+Metric,Before_Cleaning,After_Cleaning,Net_Change
+Total Rows,"10,000","10,000",0 rows preserved (100% data retention)
+Total Columns,8,8,0 columns lost (100% schema integrity)
+Total Missing / Error Values,"10,082",0,"-10,082 defective records resolved"
+Missing Value Rate (%),12.6%,0.00%,100% Complete
+Exact Duplicate Rows,0,0,0 duplicates detected or created
+Data Type Issues,8 columns with object dtype,0 columns with improper dtypes,All 8 columns mapped to native types
+Mathematical Mismatches (Total != Qty * Price),502 missing / uncomputable totals,0 mismatches (100% consistent),100% Mathematical Consistency
+Total Revenue Recorded ($),"$84,763.50 (incomplete)","$89,294.50 (fully reconciled)","+$4,531.00 recovered"

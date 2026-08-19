@@ -1,0 +1,9 @@
+Column_Name,Clean_Dtype,Total_Rows,Non_Null_Count,Null_Count,Null_Percentage,Unique_Values_Count
+Transaction ID,str,10000,10000,0,0.0,10000
+Item,category,10000,10000,0,0.0,8
+Quantity,int64,10000,10000,0,0.0,6
+Price Per Unit,float64,10000,10000,0,0.0,6
+Total Spent,float64,10000,10000,0,0.0,17
+Payment Method,category,10000,10000,0,0.0,4
+Location,category,10000,10000,0,0.0,3
+Transaction Date,datetime64[us],10000,10000,0,0.0,365

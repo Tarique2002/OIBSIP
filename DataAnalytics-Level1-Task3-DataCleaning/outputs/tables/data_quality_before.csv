@@ -1,0 +1,9 @@
+Column_Name,Raw_Dtype,Total_Rows,Non_Null_Count,Explicit_Null_Count,Explicit_Null_Pct,Placeholder_Error_Count,Total_Defective_Count,Total_Defective_Pct,Unique_Values_Count
+Transaction ID,str,10000,10000,0,0.0,0,0,0.0,10000
+Item,str,10000,9667,333,3.33,636,969,9.69,10
+Quantity,str,10000,9862,138,1.38,341,479,4.79,7
+Price Per Unit,str,10000,9821,179,1.79,354,533,5.33,8
+Total Spent,str,10000,9827,173,1.73,329,502,5.02,19
+Payment Method,str,10000,7421,2579,25.79,599,3178,31.78,5
+Location,str,10000,6735,3265,32.65,696,3961,39.61,4
+Transaction Date,str,10000,9841,159,1.59,301,460,4.6,367

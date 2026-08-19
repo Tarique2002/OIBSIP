@@ -1,0 +1,11 @@
+Step,Column,Issue,Action,Rows_Affected,Reason
+01_Header_Standardization,All Columns,Leading/trailing whitespace in column names,Applied str.strip() to all headers,10000,Ensures deterministic programmatic column referencing
+02_Placeholder_Normalization,"Item, Quantity, Price, Total, Payment, Location, Date","Implicit error string tokens (UNKNOWN, ERROR, nan, None)",Replaced string error placeholders with np.nan,9781,Unifies missing data representation across all columns
+03_Price_Per_Unit_Imputation,Price Per Unit,533 missing price records,Imputed via Item-price mapping table & Total/Quantity division,533,Menu items follow fixed price points in cafe POS
+04_Item_Imputation,Item,969 missing item records,Imputed uniquely priced items via price mapping; mode fallback for shared prices,969,Reconstructs product taxonomy using financial evidence
+05_Quantity_Imputation,Quantity,479 missing quantity records,Calculated Quantity = Total Spent / Price Per Unit; median fallback,479,Maintains exact Total = Quantity * Price mathematical integrity
+06_Total_Spent_Imputation,Total Spent,502 missing total spent records,Calculated Total Spent = Quantity * Price Per Unit,502,"Guarantees 100% financial consistency across all 10,000 orders"
+07_Payment_Method_Standardization,Payment Method,"3,178 missing/error payment records",Standardized to explicit category: Unknown,3178,Preserves transaction record integrity without fabricating payment modes
+08_Location_Standardization,Location,"3,961 missing/error location records",Standardized to explicit category: Unknown,3961,Avoids arbitrary classification between In-store vs Takeaway
+09_Transaction_Date_Imputation,Transaction Date,460 missing/error date records,Parsed to datetime64[ns]; imputed using forward fill & backward fill,460,Preserves chronological order across 2023 POS transaction logs
+10_Data_Type_Enforcement,All Columns,All columns stored as raw strings / object dtype,"Casted Transaction ID -> str, Item/Payment/Location -> category, Quantity -> int64, Price/Total -> float64, Date -> datetime64[ns]",10000,Enables vectorized numerical analytics and optimized memory usage
